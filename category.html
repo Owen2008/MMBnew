@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>category</title>
+  <script src="./lib/flexible/flexible_css.js"></script>
+  <script src="./lib/flexible/flexible.js"></script>
+  <!-- <link rel="stylesheet" href="./css/base.css"> -->
+ <!-- <link rel="stylesheet" href="./css/common.css"> -->
+ <link rel="stylesheet" href="./css/category.css">
+ <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+ <!-- <link rel="stylesheet" href="fonts/miconfont.eot"> -->
+ <link rel="stylesheet" type="text/css" href="./fonts/iconfont.css">
+ <!-- <link rel="stylesheet" href="fonts/iconfont.css"> -->
+
+</head>
+<body>
+  <div class="mmb-container">
+  <div class="mmb-header" id="toTop">
+    <div class="logo ">
+      <a href="./index.html">
+        <img src="./images/header_logo.png" alt="">
+      </a>
+      
+    </div>
+    <div class="download ">
+      <a href="#">
+        <img src="./images/header_app.png" alt="">
+      </a>
+    </div>
+  </div>
+  <div class="mmb-search">
+     
+    <input type="text" name="key" class="search-input" placeholder="请输入你想比价的商品名">
+    <button class="search-btn">搜索</button>
+  </div>
+  
+  <div class="mmb-main">
+    
+      <ul class="mui-table-view"> 
+          <li class="cate-top mui-table-view-cell mui-collapse">
+              <a class="mui-navigate-right " href="#">大家电</a>
+              <div class="mui-collapse-content cate-second" >
+                  <ul class="clearfix">
+                    <li>
+                      <a href="#">电视</a>
+                    </li>
+                    <li>
+                        <a href="#">空调</a>
+                    </li>
+                  <li>
+                          <a href="#">冰箱</a>
+                    </li>
+                    <li>
+                        <a href="#">电视</a>
+                      </li>
+                      <li>
+                          <a href="#">空调</a>
+                      </li>
+                    <li>
+                            <a href="#">冰箱</a>
+                      </li> 
+                      <li>
+                            <a href="#">冰箱</a>
+                      </li>   
+                  </ul>
+              </div>
+          </li>
+      </ul>
+  </div>
+  <div style="height:30px;background-color: #fff;"></div>
+  <div class="mmb-footer">
+      <div class="nav">
+        <a href="#">登陆</a>
+        <a href="#">注册</a>
+        <a href="#toTop">返回顶部 <i class="iconfont icon-xiangshang1"></i></a>
+      </div>
+      <p>
+          <a href="javascript:;" style="color: Red;">手机APP下载</a>
+          <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+</div>
+
+
+
+  <!-- 引入插件jQuery flexible tempalte -->
+  <script src="./lib/jquery/jquery-1.12.0.min.js"></script>
+  
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./lib/mui/js/mui.js"></script>
+  <script src="./js/category.js"></script>
+
+<!-- 一级分类 -->
+  <script type="text/html" id="cate-top">
+    {{each result v i }}
+    <ul class="mui-table-view" > 
+        <li class="cate-top mui-table-view-cell mui-collapse" data-titleId="{{ v.titleId }}">
+            <a class="mui-navigate-right " href="#">{{ v.title }}</a>
+         
+        </li>
+    </ul>
+    {{ /each}}
+</div>
+</script>
+
+<!-- 二级分类 -->
+  
+<script type="text/html" id="cate-second">
+ 
+<div class="mui-collapse-content cate-second" >
+    <ul class="clearfix">
+        {{each result v i }}
+      <li data-categoryid="{{ v.categoryId }}">
+        <a href="#">{{ v.category }}</a>
+      </li>
+      {{ /each}}
+    </ul>
+</div>
+
+</script>
+ 
+</body>
+</html>

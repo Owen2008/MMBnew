@@ -14,7 +14,7 @@
 </head>
 <body>
   <div class="mmb-container">
-  <div class="mmb-header">
+  <div class="mmb-header" id="toTop">
     <div class="logo ">
       <a href="index.html">
         <img src="images/header_logo.png" alt="">
@@ -33,79 +33,7 @@
     <button class="search-btn">搜索</button>
   </div>
   <div class="mmb-nav">
-    <ul class="clearfix">
-      <li>
-        <a href="#">
-          <img src="images/ic_cu.png" alt="">
-          <p>比价搜索</p>
-      </a>
-    </li>
-    <li>
-        <a href="#">
-          <img src="images/ic_cu.png" alt="">
-          <p>比价搜索</p>
-      </a>
-    </li>
-    <li>
-        <a href="#">
-          <img src="images/ic_cu.png" alt="">
-          <p>比价搜索</p>
-      </a>
-    </li>
-    <li>
-        <a href="#">
-          <img src="images/ic_cu.png" alt="">
-          <p>比价搜索</p>
-      </a>
-    </li>
-    <li>
-        <a href="#">
-          <img src="images/ic_cu.png" alt="">
-          <p>比价搜索</p>
-      </a>
-    </li>
-    <li>
-        <a href="#">
-          <img src="images/ic_cu.png" alt="">
-          <p>比价搜索</p>
-      </a>
-    </li>
-    <li>
-        <a href="#">
-          <img src="images/ic_cu.png" alt="">
-          <p>比价搜索</p>
-      </a>
-    </li>
-    <li>
-        <a href="#">
-          <img src="images/ic_cu.png" alt="">
-          <p>比价搜索</p>
-      </a>
-    </li>
-    <li>
-        <a href="#">
-          <img src="images/ic_cu.png" alt="">
-          <p>比价搜索</p>
-      </a>
-    </li>
-    <li>
-        <a href="#">
-          <img src="images/ic_cu.png" alt="">
-          <p>比价搜索</p>
-      </a>
-    </li>
-    <li>
-        <a href="#">
-          <img src="images/ic_cu.png" alt="">
-          <p>比价搜索</p>
-      </a>
-    </li>
-    <li>
-        <a href="#">
-          <img src="images/ic_cu.png" alt="">
-          <p>比价搜索</p>
-      </a>
-    </li>
+    <!-- 挖个坑 -->
     </ul>
   </div>
   <div class="mmb-main">
@@ -117,72 +45,7 @@
     
     </div>
     <div class="product">
-        <ul>
-          <li>
-            <div class="pro-img">
-              <img src="images/product.jpg" alt="">
-            </div>
-            <div class="pro-dec">
-              <p class="text">
-                  双11预售：日本进口尤妮佳/Moony婴儿纸尿裤M64*3包
-                  <span>25元定金+185元尾款</span>
-              </p>
-              <p class="origin"> 
-                <span>天猫商城 | 10-25 14:00</span>
-                <span>
-                    <i class="iconfont icon-liuyan"></i>2</span>
-              </p>
-            </div>
-          </li>
-          <li>
-              <div class="pro-img">
-                <img src="images/product.jpg" alt="">
-              </div>
-              <div class="pro-dec">
-                <p class="text">
-                    双11预售：日本进口尤妮佳/Moony婴儿纸尿裤M64*3包
-                    <span>25元定金+185元尾款</span>
-                </p>
-                <p class="origin"> 
-                  <span>天猫商城 | 10-25 14:00</span>
-                  <span>
-                      <i class="iconfont icon-liuyan"></i>2</span>
-                </p>
-              </div>
-            </li>
-            <li>
-                <div class="pro-img">
-                  <img src="images/product.jpg" alt="">
-                </div>
-                <div class="pro-dec">
-                  <p class="text">
-                      双11预售：日本进口尤妮佳/Moony婴儿纸尿裤M64*3包
-                      <span>25元定金+185元尾款</span>
-                  </p>
-                  <p class="origin"> 
-                    <span>天猫商城 | 10-25 14:00</span>
-                    <span>
-                        <i class="iconfont icon-liuyan"></i>2</span>
-                  </p>
-                </div>
-              </li>
-              <li>
-                  <div class="pro-img">
-                    <img src="images/product.jpg" alt="">
-                  </div>
-                  <div class="pro-dec">
-                    <p class="text">
-                        双11预售：日本进口尤妮佳/Moony婴儿纸尿裤M64*3包
-                        <span>25元定金+185元尾款</span>
-                    </p>
-                    <p class="origin"> 
-                      <span>天猫商城 | 10-25 14:00</span>
-                      <span>
-                          <i class="iconfont icon-liuyan"></i>2</span>
-                    </p>
-                  </div>
-                </li>
-        </ul>
+      <!-- 挖个坑 -->
         <div class="wrapper">
             <button class=" more-sale">查看更多优惠信息>></button>
         </div>        
@@ -198,7 +61,7 @@
     <div class="nav">
       <a href="#">登陆</a>
       <a href="#">注册</a>
-      <a href="#">返回顶部 <i class="iconfont icon-xiangshang1"></i></a>
+      <a href="#toTop" >返回顶部 <i class="iconfont icon-xiangshang1"></i></a>
     </div>
     <p>
         <a href="javascript:;" style="color: Red;">手机APP下载</a>
@@ -208,13 +71,52 @@
   </div>
   </div>
 
+  <!-- 导航模板 -->
+<script type="text/html" id="nav-tpl">
+ <ul class="clearfix">
+   {{ each result v i }}
+      <li>
+        <a href="{{v.titlehref}}">
+         {{@v.img}}
+          <p>{{v.name}}</p>
+      </a>
+    </li>
 
+{{ /each }}
+</script>
+<!-- 产品模板 -->
+<script type="text/html" id="product-tpl">
+  <ul>
+    {{ each result v i }}
+      <li data-id="{{v.productId}}">
+        <div class="pro-img">
+         {{@v.productImg2}}
+        </div>
+        <div class="pro-dec">
+          <p class="text">
+              {{v.productName}}
+              <span>{{v.productPinkage
+                }}</span>
+          </p>
+          <p class="origin"> 
+            <span>{{v.productFrom
+                }} | {{v.productTime}}</span>
+            <span>
+                <i class="iconfont icon-liuyan"></i>{{v.productComCount.match(/\d+/g)[0]}}
+              </span>
+          </p>
+        </div>
+      </li>
+{{ /each }}
+    </ul>
+
+</script>
   <!-- 引入插件jQuery flexible tempalte -->
   <script src="lib/jquery/jquery-1.12.0.min.js"></script>
   <script src="lib/flexible/flexible_css.js"></script>
   <script src="lib/flexible/flexible.js"></script>
-  
+  <script src="lib/artTemplate/template-web.js"></script>
   <script src="lib/mui/js/mui.js"></script>
-  
+  <script src="js/index.js"></script>
 </body>
 </html>
