@@ -1,0 +1,16 @@
+@remBase : 75;
+
+@rem : round(1 / @remBase, 6) * 1rem;
+
+// drp动态设置字体大小
+.font-size(@px) {
+  [data-dpr='1'] & {
+    font-size: round(@px * 1) * 1px;
+  }
+  [data-dpr='2'] & {
+    font-size: round(@px * 2) * 1px;
+  }
+  [data-dpr='3'] & {
+    font-size: round(@px * 3) * 1px;
+  }
+}
