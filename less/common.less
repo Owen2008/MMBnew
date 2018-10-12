@@ -94,3 +94,53 @@
     }
   }
 }
+.product {
+  ul{
+    margin-bottom: 20*@rem;
+    li{
+      height: 260*@rem;
+      display: flex;
+      border-bottom: 1px solid #E6E6E6;
+      
+      .pro-img{
+          width: 230*@rem;
+          padding: 20*@rem 30*@rem;
+          display: flex;
+          align-items: center;
+        img{
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .pro-dec{
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        padding:30*@rem 30*@rem 60*@rem;
+        .text{
+          .font-size(20px); 
+          color:#000;
+          span{
+            color:#FF5C02;
+          }
+        }
+        .origin{
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+  .wrapper{
+    padding: 20*@rem;
+    width: 100%;
+    
+    .more-sale{
+      display: block;
+      height: 60*@rem;
+      width: 100%;
+      font-size:.16rem;
+    }
+  }
+ 
+}  

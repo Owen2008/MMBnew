@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>productlist</title>
+  <script src="./lib/flexible/flexible_css.js"></script>
+  <script src="./lib/flexible/flexible.js"></script>
+  <!-- <link rel="stylesheet" href="./css/base.css"> -->
+ <!-- <link rel="stylesheet" href="./css/common.css"> -->
+ <link rel="stylesheet" href="./css/productlist.css">
+ <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+ <!-- <link rel="stylesheet" href="fonts/miconfont.eot"> -->
+ <link rel="stylesheet" type="text/css" href="./fonts/iconfont.css">
+ <!-- <link rel="stylesheet" href="fonts/iconfont.css"> -->
+
+</head>
+<body>
+  <div class="mmb-container">
+  <div class="mmb-header" id="toTop">
+    <div class="logo ">
+      <a href="./index.html">
+        <img src="./images/header_logo.png" alt="">
+      </a>
+      
+    </div>
+    <div class="download ">
+      <a href="#">
+        <img src="./images/header_app.png" alt="">
+      </a>
+    </div>
+  </div>
+  <div class="mmb-search">
+     
+    <input type="text" name="key" class="search-input" placeholder="请输入你想比价的商品名">
+    <button class="search-btn">搜索</button>
+  </div>
+  
+  <div class="mmb-main">
+    <div class="category-nav">
+    
+      <button class="selector mui-btn">删选</button>
+    </div>
+      <div class="product">
+        <!-- 挖个坑 -->
+        <ul>
+            
+              <li data-id="">
+                <div class="pro-img">
+                 <img src="images/product.jpg" alt="">
+                </div>
+                <div class="pro-dec">
+                  <p class="text">
+                     111111111111111111111111
+                  </p>
+                  <p class="price"> &yen; 998.00</p>
+                  <p class="origi"> 
+                   <span>报价 </span>
+                   <span> 评论</span>
+        
+                  </p>
+                </div>
+              </li>
+              <li data-id="">
+                  <div class="pro-img">
+                   <img src="images/product.jpg" alt="">
+                  </div>
+                  <div class="pro-dec">
+                    <p class="text">
+                       111111111111111111111111
+                    </p>
+                    <p class="price"> &yen; 998.00</p>
+                    <p class="origi"> 
+                     <span>报价 </span>
+                     <span> 评论</span>
+          
+                    </p>
+                  </div>
+                </li>
+            </ul>
+      </div>
+  </div>
+  
+  <div class="mmb-footer">
+      <div class="nav">
+        <a href="#">登陆</a>
+        <a href="#">注册</a>
+        <a href="#toTop">返回顶部 <i class="iconfont icon-xiangshang1"></i></a>
+      </div>
+      <p>
+          <a href="javascript:;" style="color: Red;">手机APP下载</a>
+          <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+</div>
+
+
+
+  <!-- 引入插件jQuery flexible tempalte -->
+  <script src="./lib/jquery/jquery-1.12.0.min.js"></script>
+  
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./lib/mui/js/mui.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/productlist.js"></script>
+
+  <!-- 面包屑模板 -->
+  <script type="text/html" id="nav-tpl">
+    {{ each result v i}}
+    <ul>
+        <li><a href="index.html"> 首页</a>  > </li>
+        <li><a href="category.html"> 全部分类</a> > </li>
+        <li>{{v.category}}</li>
+      </ul>
+      {{ /each}}
+  </script>
+  
+
+
+
+  <script type="text/html" id="product-tpl">
+    <ul>
+      {{ each result v i }}
+        <li data-id="{{v.productId}}">
+          <div class="pro-img">
+           {{@v.productImg2}}
+          </div>
+          <div class="pro-dec">
+            <p class="text">
+                {{v.productName}}
+                <span>{{v.productPinkage
+                  }}</span>
+            </p>
+            <p class="origin"> 
+              <span>{{v.productFrom
+                  }} | {{v.productTime}}</span>
+              <span>
+                  
+                </span>
+            </p>
+          </div>
+        </li>
+  {{ /each }}
+      </ul>
+  
+  </script>
+  
+ 
+</body>
+</html>

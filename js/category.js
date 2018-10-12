@@ -28,6 +28,13 @@ $(".mmb-main").on("tap", ".cate-top",function(){
   })
 })
 
+//点击分类,跳转到产品列表页
+$(".mmb-main").on("tap",".category-tips",function(){
+  var categoryid=$(this)[0].dataset["categoryid"];
+  console.log(categoryid)
+  location.href="productlist.html?id="+categoryid+"";
+})
+
 
 
 })
