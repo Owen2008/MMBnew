@@ -11,8 +11,11 @@ $( function () {
   },
   type:"get",
   success:function(info){
-
+console.log(info)
   $(".category-nav").prepend(template ("nav-tpl", info));
+  },
+  error:function(){
+    console.log("出错啦")
   }
   })
 
@@ -89,4 +92,16 @@ var page;
     render(currentPage);
   })
 
+})
+
+
+
+//产品点击事件
+$(".product").on("tap","li",function(){
+var cate=  $(".cate-top").text();
+ var productid=$(this).data("productid");
+
+  var brand=$(this).find("p.hide").text().split(" ")[0];
+  
+  location.href="bijia.html?cate="+cate+"&brand="+brand+"&productid="+productid+""
 })

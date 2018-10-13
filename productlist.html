@@ -97,9 +97,10 @@
   <script type="text/html" id="nav-tpl">
     {{ each result v i}}
     <ul>
+      
         <li><a href="index.html"> 首页</a>  > </li>
         <li><a href="category.html"> 全部分类</a> > </li>
-        <li>{{v.category}}</li>
+        <li class="cate-top">{{v.category}}</li>
       </ul>
       {{ /each}}
   </script>
@@ -110,8 +111,9 @@
   <script type="text/html" id="product-tpl">
     <ul data-pagetotal="{{totalCount}}" data-pagesize="{{pagesize}}">
       {{ each result v i }}
-    
-        <li data-id="">
+     
+        <li data-productid="{{v.productId}}">
+            <p class="hide">{{v.productName}}</p>
           <div class="pro-img">
           {{@v.productImg}}
           </div>

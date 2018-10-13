@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>bijia</title>
+  <script src="./lib/flexible/flexible_css.js"></script>
+  <script src="./lib/flexible/flexible.js"></script>
+ <link rel="stylesheet" href="./css/bijia.css">
+ <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  
+ <link rel="stylesheet" type="text/css" href="./fonts/iconfont.css">
+ 
+
+</head>
+<body>
+  <div class="mmb-container">
+  <div class="mmb-header" id="toTop">
+    <div class="logo ">
+      <a href="./index.html">
+        <img src="./images/header_logo.png" alt="">
+      </a>
+      
+    </div>
+    <div class="download ">
+      <a href="#">
+        <img src="./images/header_app.png" alt="">
+      </a>
+    </div>
+  </div>
+  <div class="mmb-search">
+     
+    <input type="text" name="key" class="search-input" placeholder="请输入你想比价的商品名">
+    <button class="search-btn">搜索</button>
+  </div>
+  
+   
+  <div class="mmb-main">
+      <div class="category-nav">
+      <ul>
+        
+          <li><a href="index.html"> 首页</a>  > </li>
+          <li class="cate"><a href="category.html"> 电视</a> > </li>
+          <li class="brand"> <span></span>
+          ></li>
+      
+      </ul>
+        <button class="selector mui-btn">删选</button>
+      </div>
+        <div class="product">
+          <!-- 挖个坑 -->
+          <div class="tital">
+              
+           
+                  <!-- <h3 class="mui-ellipsis-2">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h3>
+                  <div class="wrapper">
+                      <img src="images/categorylist.jpg" alt="">
+                  </div> 
+                  <a href="Javascript:;">收藏</a>
+               </div>
+               <ul class="nav">
+                  <li class="current"><a href="#" >比价购买</a></li>
+                  <li><a href="#">产品参数</a></li>
+                  <li><a href="#">评价</a></li>
+                </ul>
+      
+      
+             <div class="origin">
+               <div class="left"> 京东商城</div>
+               <div class="right">
+                 <span class="price">1900</span>
+                 <button class="buy">去购买</button>
+               </div>
+             </div>
+             <div class="tips mui-ellipsis-2">
+               <p>222222222222222222222</p>
+             </div>
+          </div>
+          -->
+
+
+            
+
+         <div class="common">
+            <p class="title">网友评价</p>
+
+            <ul id="common">
+              <li>
+               
+                <p class="clearfix">
+                  <span class="fl">用户名</span>
+                  <span class="fr">日期</span>
+                </p>
+                <p style="text-align:right">购买于京东商城</p>
+                <p>eeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrrr
+                    eeeeeeeeeeeeeeeeeeerrrr
+                    rrrrrrrrrrrrrrreeeeeeeeeeeeeeeeeeerrrrr
+                    rrrrrrrrrrrrrreeeeeeeeeeeeeeeeeeerrrrrrrrrr
+                    rrrrrrrrreeeeeeeeeeeeeeeeeeerrrrrrrr
+                    rrrrrrrrrrreeeeeeeeeeeeeeeeeeerrrrrrrrrrrr
+                    rrrrrrrr</p>
+                </li>
+            <ul>
+              <div class="wrapper">
+                  <button class="mui-btn-block">查看更多评价</button>
+              </div>
+        
+          </div>
+
+          </div>
+         
+
+        </div>
+  
+
+  <div class="mmb-footer">
+      <div class="nav">
+        <a href="#">登陆</a>
+        <a href="#">注册</a>
+        <a href="#toTop">返回顶部 <i class="iconfont icon-xiangshang1"></i></a>
+      </div>
+      <p>
+          <a href="javascript:;" style="color: Red;">手机APP下载</a>
+          <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+</div>
+
+
+
+  <!-- 引入插件jQuery flexible tempalte -->
+  <script src="./lib/jquery/jquery-1.12.0.min.js"></script>
+ 
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./lib/mui/js/mui.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/bijia.js"></script>
+
+  <!-- 面包屑模板 -->
+  <script type="text/html" id="product-tpl">
+    {{ each result v i}}
+    <div class="item-pic">
+      <h3 class="mui-ellipsis-2">{{v.productName}}</h3>
+      <div class="wrapper">
+          {{@v.productImg}}
+      </div> 
+      <a href="Javascript:;">收藏</a>
+   </div>
+    <ul class="nav">
+        <li class="current"><a href="#" >比价购买</a></li>
+        <li><a href="#">产品参数</a></li>
+        <li><a href="#">评价</a></li>
+      </ul>
+
+    <!-- {{@v.bjShop}} -->
+  
+      <div class="origin">
+          {{@v.bjShop}}
+          <!-- <div class="left"> 京东商城</div>
+          <div class="right">
+            <span class="price">1900</span>
+            <button class="buy">去购买</button>
+          </div> -->
+        </div>
+   <div class="tips mui-ellipsis-2">
+      <div class="note">
+          * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+      </div>
+   </div>
+
+      {{ /each}}
+  </script>
+
+
+
+  <script type="text/html" id="common-tpl">
+  {{each result v i}}
+  <li>
+               
+      <p class="clearfix">
+        <span class="fl">{{v.comName}}</span>
+        <span class="fr">{{v.comTime}}</span>
+      </p>
+      <p style="text-align:right">{{v.comFrom}}</p>
+      <p>{{v.comContent}}</p>
+      </li>
+  {{/each}}
+  </script>
+  
+
+
+
+
+
+
+ 
+</body>
+</html>

@@ -150,6 +150,9 @@ textarea {
   width: 50%;
 }
 /*------------- E common css  也就是我们公用的css -------------*/
+.hide {
+  display: none;
+}
 .mmb-container {
   min-width: 320px;
   max-width: 750px;
@@ -226,46 +229,46 @@ textarea {
   border-left: 1px solid #C8C8C8;
   border-right: 1px solid #C8C8C8;
 }
-.product ul {
+.product > ul {
   margin-bottom: 0.26666rem;
 }
-.product ul li {
+.product > ul li {
   height: 3.46658rem;
   display: flex;
   border-bottom: 1px solid #E6E6E6;
 }
-.product ul li .pro-img {
+.product > ul li .pro-img {
   width: 3.06659rem;
   padding: 0.26666rem 0.39999rem;
   display: flex;
   align-items: center;
 }
-.product ul li .pro-img img {
+.product > ul li .pro-img img {
   width: 100px;
   height: 100px;
 }
-.product ul li .pro-dec {
+.product > ul li .pro-dec {
   flex-direction: column;
   display: flex;
   justify-content: space-between;
   padding: 0.39999rem 0.39999rem 0.79998rem;
 }
-.product ul li .pro-dec .text {
+.product > ul li .pro-dec .text {
   color: #000;
 }
-[data-dpr='1'] .product ul li .pro-dec .text {
+[data-dpr='1'] .product > ul li .pro-dec .text {
   font-size: 20px;
 }
-[data-dpr='2'] .product ul li .pro-dec .text {
+[data-dpr='2'] .product > ul li .pro-dec .text {
   font-size: 40px;
 }
-[data-dpr='3'] .product ul li .pro-dec .text {
+[data-dpr='3'] .product > ul li .pro-dec .text {
   font-size: 60px;
 }
-.product ul li .pro-dec .text span {
+.product > ul li .pro-dec .text span {
   color: #FF5C02;
 }
-.product ul li .pro-dec .origin {
+.product > ul li .pro-dec .origin {
   display: flex;
   justify-content: space-between;
 }
@@ -278,6 +281,23 @@ textarea {
   height: 0.79998rem;
   width: 100%;
   font-size: .16rem;
+}
+.category-nav {
+  height: 0.93331rem;
+  line-height: 0.93331rem;
+  border-top: 1px solid #C9C9C9;
+  border-bottom: 1px solid #C9C9C9;
+  background-image: linear-gradient(to bottom, #ffffff, #eeeeee);
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.category-nav ul li {
+  float: left;
+}
+.category-nav .selector {
+  background-image: linear-gradient(to bottom, #d5d5d5, #ffffff);
 }
 .mmb-main {
   background-color: #fff;

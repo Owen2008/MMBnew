@@ -14,6 +14,9 @@
     font-size: round(@px * 3) * 1px;
   }
 }
+.hide{
+  display:none;
+}
 .mmb-container{
   min-width: 320px;
   max-width:750px;
@@ -95,7 +98,7 @@
   }
 }
 .product {
-  ul{
+  >ul{
     margin-bottom: 20*@rem;
     li{
       height: 260*@rem;
@@ -143,4 +146,26 @@
     }
   }
  
-}  
+} 
+// 比价 
+.category-nav{
+  height: 70*@rem;
+  line-height:  70*@rem;
+  border-top: 1px solid #C9C9C9;
+  border-bottom: 1px solid #C9C9C9;
+  background-image: linear-gradient(to bottom, #fff, #EEE);
+  padding:0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  ul{
+    // overflow: hidden;
+    li{
+      float: left;
+    }
+  }
+  .selector{
+    
+    background-image: linear-gradient(to bottom, #D5D5D5, #fff);
+  }
+}

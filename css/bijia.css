@@ -299,50 +299,125 @@ textarea {
 .category-nav .selector {
   background-image: linear-gradient(to bottom, #d5d5d5, #ffffff);
 }
-.mmb-main .cate-top .mui-navigate-right {
+.mmb-main {
+  background-color: #fff;
+}
+.mmb-main .product .tital .item-pic {
+  background-color: #fff;
+  height: 6.6665rem;
+  text-align: center;
+  position: relative;
+}
+.mmb-main .product .tital .item-pic h3 {
+  padding: 0.53332rem;
+  height: 1.99995rem;
+  font-size: .48rem;
+}
+.mmb-main .product .tital .item-pic .wrapper img {
+  vertical-align: middle;
+}
+.mmb-main .product .tital .item-pic a {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  line-height: 1.06664rem;
+  width: 1.06664rem;
   height: 1.06664rem;
-  line-height: 0.66665rem;
-  display: block;
-  background-color: #EDEDED;
-  font-size: .36rem;
-  font-weight: 700;
-  border: 1px solid #CDCDCD;
-  border-radius: 5px 5px 0 0;
-  padding-left: 0.39999rem;
-  color: #000;
+  background-color: #46EC00;
+  border-radius: 50%;
+  color: #fff;
 }
-.mmb-main .cate-top .mui-collapse-content.cate-second {
-  padding: 0;
+[data-dpr='1'] .mmb-main .product .tital .item-pic a {
+  font-size: 14px;
 }
-.mmb-main .cate-top .mui-collapse-content.cate-second ul {
-  background-color: #F9F9F9;
+[data-dpr='2'] .mmb-main .product .tital .item-pic a {
+  font-size: 28px;
 }
-.mmb-main .cate-top .mui-collapse-content.cate-second ul li {
+[data-dpr='3'] .mmb-main .product .tital .item-pic a {
+  font-size: 42px;
+}
+.mmb-main .product .tital ul.nav {
+  overflow: hidden;
+  background-color: #FFC82F;
+  border-top: 1px solid #C45D20;
+  border-bottom: 1px solid #C45D20;
+}
+.mmb-main .product .tital ul.nav li {
+  height: 0.853312rem;
+  line-height: 0.853312rem;
   float: left;
   width: 33.3%;
 }
-.mmb-main .cate-top .mui-collapse-content.cate-second ul li a {
-  height: 1.06664rem;
-  line-height: 1.06664rem;
-  display: block;
+.mmb-main .product .tital ul.nav li a {
   width: 100%;
+  display: block;
   text-align: center;
-  border-right: 1px solid #CDCDCD;
-  border-bottom: 1px solid #CDCDCD;
-  color: #000;
+  color: #fff;
 }
-[data-dpr='1'] .mmb-main .cate-top .mui-collapse-content.cate-second ul li a {
+[data-dpr='1'] .mmb-main .product .tital ul.nav li a {
   font-size: 14px;
 }
-[data-dpr='2'] .mmb-main .cate-top .mui-collapse-content.cate-second ul li a {
+[data-dpr='2'] .mmb-main .product .tital ul.nav li a {
   font-size: 28px;
 }
-[data-dpr='3'] .mmb-main .cate-top .mui-collapse-content.cate-second ul li a {
+[data-dpr='3'] .mmb-main .product .tital ul.nav li a {
   font-size: 42px;
 }
-.mmb-main .cate-top .mui-collapse-content.cate-second ul li a:nth-child(3n+1) {
-  border-left: 1px solid #CDCDCD;
+.mmb-main .product .tital ul.nav li:nth-child(even) {
+  border-left: 1px solid #C45D20;
+  border-right: 1px solid #C45D20;
 }
-.mmb-footer {
-  margin-top: 0;
+.mmb-main .product .tital ul.nav li.current {
+  background-color: #FF9F23;
+}
+.mmb-main .product .tital .origin {
+  height: 0.613318rem;
+  padding: 0.13333rem 0.26666rem 0;
+  margin: 0.26666rem 0;
+}
+.mmb-main .product .tital .tips {
+  border-top: 1px solid #666;
+  border-bottom: 3px solid #666;
+  padding: 0.26666rem;
+  color: #666;
+  letter-spacing: 1.8;
+}
+.mmb-main .common .title {
+  text-align: center;
+  line-height: 0.879978rem;
+  background-color: #DBDBDB;
+  height: 0.879978rem;
+  color: #000;
+}
+[data-dpr='1'] .mmb-main .common .title {
+  font-size: 18px;
+}
+[data-dpr='2'] .mmb-main .common .title {
+  font-size: 36px;
+}
+[data-dpr='3'] .mmb-main .common .title {
+  font-size: 54px;
+}
+.mmb-main .common > ul li {
+  padding: 0.39999rem;
+  border-bottom: 1px solid #666;
+}
+.mmb-main .common > ul li p {
+  width: 100%;
+}
+.mmb-main .common .wrapper {
+  padding: 0.39999rem;
+}
+.mmb-main .common .wrapper .mui-btn-block {
+  background-image: linear-gradient(180deg, #eeeeee, #d7d7d7);
+  box-shadow: 2px 2px 2px #B4B4B4;
+}
+[data-dpr='1'] .mmb-main .common .wrapper .mui-btn-block {
+  font-size: 16px;
+}
+[data-dpr='2'] .mmb-main .common .wrapper .mui-btn-block {
+  font-size: 32px;
+}
+[data-dpr='3'] .mmb-main .common .wrapper .mui-btn-block {
+  font-size: 48px;
 }
