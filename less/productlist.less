@@ -24,7 +24,73 @@
     }
   }
   .product{
-
+   ul{
+    margin-bottom: 0;
+ }
+     .price{
+       font-size: .30rem;
+       color:red;
+     }
   }
   
+}
+.pagination{
+  padding:30*@rem;;
+
+ border-bottom: 1px solid #C9C9C9;
+  background: #fff;
+  .numberbox{
+    display: flex;
+    justify-content: space-around;
+    button{
+      width: 162*@rem;
+      height: 66*@rem;
+      background-image: linear-gradient(to bottom, #D5D5D5, #fff);
+
+    }
+    .warpper{
+     
+      position: relative;
+      height: 66*@rem;
+      width: 150*@rem;
+      border:1px solid #C9C9C9;
+      text-align: center;
+      line-height: 66*@rem; 
+      .font-size(18px);
+      // height: 66*@rem;
+    
+    i{
+      padding-top:20*@rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 32*@rem;
+      height: 100%;
+      background-color: #E7E7E7;
+      font-size: .30rem;
+    }
+    ul.hide{
+      display:none;
+    }
+    ul{
+      width: 150*@rem;
+      position: absolute;
+      top:66*@rem;
+      left:0;
+    li{
+      height: 66*@rem;
+      width: 150*@rem;
+      border:1px solid #C9C9C9;
+      border-top: none;
+      background-color: #fff;
+    }
+    li:hover{
+      background-color: skyblue;
+    }
+    }
+    }
+    
+  }
+ 
+
 }
