@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>moneycontrol</title>
+  <title>inlanddiscout</title>
   <script src="./lib/flexible/flexible_css.js"></script>
   <script src="./lib/flexible/flexible.js"></script>
- <link rel="stylesheet" href="./css/moneycontrol.css">
+ <link rel="stylesheet" href="./css/inlanddiscout.css">
  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
   
  <link rel="stylesheet" type="text/css" href="./fonts/iconfont.css">
@@ -18,13 +18,16 @@
   <div class="mmb-container">
   <div class="mmb-header"  id="toTop">
     <div class="logo ">
-      <i class="mui-icon mui-icon-arrowleft" style="color:#fff;font-size: 30px;"></i>
+        <a href="Javascript:history.go(-1)">
+            <i class="mui-icon mui-icon-arrowleft" style="color:#fff;font-size: 30px;"></i>
+        </a>
+      
        
      </div>
       <!-- <a href="./index.html">
         <img src="./images/header_logo.png" alt="">
       </a> -->
-      <h3 >省钱控-最新优惠</h3>
+      <h3 >国内折扣</h3>
    
     
     <div class="download ">
@@ -37,34 +40,31 @@
   
   <div class="mmb-main">
    
-      <div class="product">
+      <div class="product-g">
         <!-- 挖个坑 -->
-       
-      </div>
-  </div>
-  <!-- 分页 -->
-  <div class="pagination">
-    <div class="numberbox">
-      <!-- "-"按钮，点击可减小当前数值 -->
-      <button  type="button" class="prev">上一页</button>
-      <div class="warpper">
-        <div class="box">
-            <span class="current">1</span> / <span class="total">3</span>
-        </div>
-       
-        <ul class="hide" id="down">
+       <ul>
+         <li>
+           <div class="imgbox">
+              <img src="images/product.jpg" alt="">
+           </div>
         
-        </ul>      
-        <!-- <input  type="number" > -->
-        <i class="mui-icon mui-icon-arrowdown"></i>
+          <h3 class="mui-ellipsis-2">产品名字asdsasafsafasfsgdfrt</h3>
+          <p class="price">价格</p>
+          <p> <span>来源</span> | <span>日期</span></p>
+         </li>
+         <li>
+            <div class="imgbox">
+                <img src="images/product.jpg" alt="">
+             </div>
+           <h3 class="mui-ellipsis-2">产品名字afdggfhgjhkfhkhhdgdfffffffffffffffffffffff</h3>
+           <p class="price">价格</p>
+           <p> <span>来源</span> | <span>日期</span></p>
+          </li>
+       </ul>
       </div>
-
-      <!-- "+"按钮，点击可增大当前数值 -->
-      <button type="button" class="next">下一页</button>
-    </div>
-
-
   </div>
+
+ 
 
   <div class="mmb-footer">
       <div class="nav">
@@ -88,7 +88,7 @@
   <script src="./lib/artTemplate/template-web.js"></script>
   <script src="./lib/mui/js/mui.js"></script>
   <script src="./js/common.js"></script>
-  <script src="./js/moneycontrol.js"></script>
+  <script src="./js/inlanddiscout.js"></script>
 
   
   
@@ -96,29 +96,22 @@
 <!-- 产品模块渲染 -->
 
 <script type="text/html" id="product-tpl">
-  <ul data-pagetotal="{{totalCount}}" data-pagesize="{{pagesize}}">
+  <ul>
     {{ each result v i }}
       <li data-id="{{v.productId}}">
-        <div class="pro-img">
-         {{@v.productImgSm}}
-        </div>
-        <div class="pro-dec">
-          <p class="text">
-              {{v.productName}}
-              <span>{{v.productPinkage
-                }}</span>
-          </p>
-          <p class="origin"> 
-            <span>{{v.productFrom
-                }} | {{v.productTime}}</span>
-            <span>
-                <i class="iconfont icon-liuyan"></i>{{v.productComCount.match(/\d+/g)[0]}}
-              </span>
-          </p>
-        </div>
+         
+              <div class="imgbox">
+                 {{@v.productImg}}
+              </div>
+           
+             <h3 class="mui-ellipsis-2">{{ v.productName}}</h3>
+             <p class="price">{{v.productPrice}}</p>
+             <p class="tip"> <span>{{v.productFrom}}</span> | <span>{{v.productTime}}</span></p>
+            </li>
+         
       </li>
-{{ /each }}
-    </ul>
+   {{ /each }}
+  </ul>
 
 </script>
 

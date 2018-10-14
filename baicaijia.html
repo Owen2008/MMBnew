@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>baicaijia</title>
+  <script src="./lib/flexible/flexible_css.js"></script>
+  <script src="./lib/flexible/flexible.js"></script>
+ <link rel="stylesheet" href="./css/baicaijia.css">
+ <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  
+ <link rel="stylesheet" type="text/css" href="./fonts/iconfont.css">
+ 
+
+</head>
+<body>
+   
+  <div class="mmb-container">
+  <div class="mmb-header"  id="toTop">
+    <div class="logo ">
+        <a href="Javascript:history.go(-1)">
+            <i class="mui-icon mui-icon-arrowleft" style="color:#fff;font-size: 30px;"></i>
+        </a>
+        
+       
+     </div>
+      <!-- <a href="./index.html">
+        <img src="./images/header_logo.png" alt="">
+      </a> -->
+      <h3 >白菜价-淘宝内部卷</h3>
+   
+    
+    <div class="download ">
+      <a href="#">
+        <img src="./images/header_app.png" alt="">
+      </a>
+    </div>
+  </div>
+ 
+  
+  <div class="mmb-main">
+     
+     
+      <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+          <div class="mui-scroll" id="nav">
+        <!-- 坑  -->
+        </div>
+    </div>
+      <div class="product">
+        <!-- 挖个坑 -->
+        <!-- <ul >
+          
+              <li data-id="{{v.productId}}">
+                <div class="pro-img">
+                 <img src="images/product.jpg" alt="">
+                </div>
+                <div class="pro-dec">
+                  <p class="text">
+                      {{v.productName}}
+                      
+                  </p>
+                  <p class="price"> 
+                   卷后 $1.9 原价
+                  </p>
+                  <div class="com">一零上数量</div>
+                  <div class="link clearfix">
+                    <a href="#" class="fl">领券</a>
+                    <a href="#" class="fr">下单链接</a>
+                  </div>
+              
+                </div>
+              </li>
+              <li data-id="{{v.productId}}">
+                  <div class="pro-img">
+                   <img src="images/product.jpg" alt="">
+                  </div>
+                  <div class="pro-dec">
+                    <p class="text">
+                        {{v.productName}}11111111111111111111111111111
+                        
+                    </p>
+                    <p class="price"> 
+                     卷后 $1.9 原价
+                    </p>
+                    <div class="com">一零上数量</div>
+                    <div class="link clearfix">
+                      <a href="#" class="fl">领券</a>
+                      <a href="#" class="fr">下单链接</a>
+                    </div>
+                
+                  </div>
+                </li>
+            </ul> -->
+        
+      </div>
+  </div>
+
+
+
+  <div class="mmb-footer">
+      <div class="nav">
+        <a href="#">登陆</a>
+        <a href="#">注册</a>
+        <a href="#toTop">返回顶部 <i class="iconfont icon-xiangshang1"></i></a>
+      </div>
+      <p>
+          <a href="javascript:;" style="color: Red;">手机APP下载</a>
+          <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+</div>
+
+
+
+  <!-- 引入插件jQuery flexible tempalte -->
+  <script src="./lib/jquery/jquery-1.12.0.min.js"></script>
+ 
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./lib/mui/js/mui.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/baicaijia.js"></script>
+
+  <!-- 导航渲染 -->
+  <script type="text/html" id="nav-tpl">
+    
+    <ul class="clearfix">
+        {{ each result v i}}
+        <li data-titleid="{{v.titleId}}" class="mui-control-item"><a href="#">{{ v.title}}</a></li>
+        {{ /each}}
+      </ul>
+  
+  </script>
+
+<!-- 产品模块渲染 -->
+
+<script type="text/html" id="product-tpl">
+  <ul >
+      {{ each result v i }}     
+  
+      <li data-id="{{v.productId}}">
+          <div class="pro-img">
+           {{@v.productImg}}
+          </div>
+          <div class="pro-dec">
+            <p class="text">
+                {{@v.productName}}
+                
+            </p>
+            <p class="price"> 
+             {{@v.productPrice}}
+            </p>
+            <div class="com">{{@v.productCouponRemain}}</div>
+            <div class="link clearfix">
+              {{@v.productCoupon}}
+              {{@v.productHref}}
+            </div>
+        
+          </div>
+        </li>
+        {{ /each }}
+    </ul>
+</script>
+
+
+
+  <!-- 分页渲染 -->
+  <!-- <script type="text/html" id="pagination-tpl">
+ {{ each result v i}}
+  <li><span>{{i+1}}</span> / <span>{{totalCount/pagesize}}</span></li>
+ {{ /each}} 
+  </script> -->
+ 
+</body>
+</html>

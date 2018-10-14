@@ -368,43 +368,128 @@ textarea {
 .pagination .numberbox .warpper ul li:hover {
   background-color: skyblue;
 }
-.mmb-nav {
-  margin: 0.13333rem 0;
+.mmb-main {
+  position: relative;
+}
+.mmb-main .mui-segmented-control.mui-segmented-control-inverted {
+  height: 1.19997rem;
+}
+.mmb-main .mui-segmented-control.mui-segmented-control-inverted #nav {
+  height: 100%;
+  position: absolute;
+}
+.mmb-main .mui-segmented-control.mui-segmented-control-inverted #nav ul {
+  width: 1000px;
+  padding: 0.066665rem 0.26666rem;
   background-color: #fff;
 }
-.mmb-nav ul li {
-  width: 25%;
+.mmb-main .mui-segmented-control.mui-segmented-control-inverted #nav ul li {
   float: left;
-  margin-top: 0.39999rem;
+  font-size: 0.39999rem;
 }
-.mmb-nav ul li a {
+.mmb-main .mui-segmented-control.mui-segmented-control-inverted #nav ul li a {
   display: block;
+  padding: 0.26666rem;
+  color: #000;
+}
+[data-dpr='1'] .mmb-main .mui-segmented-control.mui-segmented-control-inverted #nav ul li a {
+  font-size: 20px;
+}
+[data-dpr='2'] .mmb-main .mui-segmented-control.mui-segmented-control-inverted #nav ul li a {
+  font-size: 40px;
+}
+[data-dpr='3'] .mmb-main .mui-segmented-control.mui-segmented-control-inverted #nav ul li a {
+  font-size: 60px;
+}
+.mmb-main .mui-segmented-control.mui-segmented-control-inverted #nav ul li.mui-active {
+  color: #F4483E;
+  border-bottom: 2px solid #F4483E;
+}
+.mmb-main .product ul li {
+  height: 100%;
+  margin-top: 5px;
+  background-color: #fff;
+}
+.mmb-main .product ul li .pro-dec .text {
+  font-size: .38rem;
+  margin: 0;
+}
+.mmb-main .product ul li .pro-dec .price {
+  color: #FC353A;
+  font-size: .50rem;
+  margin: 0.13333rem 0;
+}
+.mmb-main .product ul li .pro-dec .price i {
+  font-style: normal;
+  font-size: .36rem;
+}
+.mmb-main .product ul li .pro-dec .price em {
+  font-size: .3rem;
+}
+.mmb-main .product ul li .pro-dec .price del {
+  margin-left: 5px;
+  color: #666;
+  font-size: .14rem;
+}
+.mmb-main .product ul li .pro-dec .com .bar {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.mmb-main .product ul li .pro-dec .com .bar i {
+  display: block;
+  width: 2.13328rem;
+  height: 0.39999rem;
+  border: 1px solid #FF5E5D;
+  border-radius: 5px;
+  font-size: 0.12 0.013333rem;
+  line-height: 0.346658rem;
+  position: relative;
+  float: left;
+  color: #fff;
+  text-align: center;
+  background-color: #FFB7B7;
+}
+.mmb-main .product ul li .pro-dec .com .bar em {
+  position: absolute;
+  display: block;
+  background-color: #FF5E5D;
+  height: 0.39999rem;
+  border-radius: 5px;
+}
+.mmb-main .product ul li .pro-dec .com .bar span {
+  position: absolute;
+  z-index: 99;
+}
+.mmb-main .product ul li .pro-dec .com .bar b {
+  font-size: 0.14 0.013333rem;
+  margin-left: 0.26666rem;
+  float: left;
+  color: #FF5E5D;
+}
+.mmb-main .product ul li .pro-dec .link {
+  overflow: hidden;
+  margin-top: 0.26666rem;
+}
+.mmb-main .product ul li .pro-dec .link a:nth-child(1) {
+  float: left;
+  width: 2.79993rem;
+  height: 0.66665rem;
+  border: 1px dashed #FF5E5D;
+  background-color: #FFB7B7;
+  color: #FF5E5D;
+  line-height: 0.66665rem;
+  font-size: .12rem;
   text-align: center;
 }
-.mmb-nav ul li img {
-  width: 1.3333rem;
-  height: 100 0.013333rem;
-  border-radius: 50%;
-}
-.mmb-main {
-  background-color: #fff;
-}
-.mmb-main .title {
-  height: 0.879978rem;
-  line-height: 0.879978rem;
-  background-color: #FF9C1C;
-  color: #fff;
-  padding: 0 0.13333rem;
-  font-size: 0.32rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.mmb-main .title .more {
-  display: flex;
-  align-items: center;
-}
-.mmb-main .title .more img {
-  width: 0.586652rem;
-  height: 0.586652rem;
+.mmb-main .product ul li .pro-dec .link a:nth-child(2) {
+  float: right;
+  width: 1.519962rem;
+  height: 0.746648rem;
+  border-radius: 5px;
+  background-color: #FF5E5D;
+  color: #FFF;
+  line-height: 0.746648rem;
+  font-size: .14rem;
+  text-align: center;
 }

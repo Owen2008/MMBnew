@@ -102,6 +102,7 @@
   height: 100px;
 }
 .product > ul li .pro-dec {
+  width: 100%;
   flex-direction: column;
   display: flex;
   justify-content: space-between;

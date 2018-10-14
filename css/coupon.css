@@ -368,43 +368,30 @@ textarea {
 .pagination .numberbox .warpper ul li:hover {
   background-color: skyblue;
 }
-.mmb-nav {
-  margin: 0.13333rem 0;
-  background-color: #fff;
+.mmb-main .product-yh {
+  padding: 0.13333rem;
 }
-.mmb-nav ul li {
-  width: 25%;
-  float: left;
-  margin-top: 0.39999rem;
-}
-.mmb-nav ul li a {
-  display: block;
+.mmb-main .product-yh ul li {
+  border: 1px solid #ccc;
   text-align: center;
+  height: 3.119922rem;
+  float: left;
+  width: 33%;
+  margin: 0.1%;
 }
-.mmb-nav ul li img {
-  width: 1.3333rem;
-  height: 100 0.013333rem;
-  border-radius: 50%;
+.mmb-main .product-yh ul li img {
+  width: 100px;
+  height: 100px;
 }
-.mmb-main {
-  background-color: #fff;
+.mmb-main .product-yh ul li p {
+  color: #000;
 }
-.mmb-main .title {
-  height: 0.879978rem;
-  line-height: 0.879978rem;
-  background-color: #FF9C1C;
-  color: #fff;
-  padding: 0 0.13333rem;
-  font-size: 0.32rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+[data-dpr='1'] .mmb-main .product-yh ul li p {
+  font-size: 20px;
 }
-.mmb-main .title .more {
-  display: flex;
-  align-items: center;
+[data-dpr='2'] .mmb-main .product-yh ul li p {
+  font-size: 40px;
 }
-.mmb-main .title .more img {
-  width: 0.586652rem;
-  height: 0.586652rem;
+[data-dpr='3'] .mmb-main .product-yh ul li p {
+  font-size: 60px;
 }

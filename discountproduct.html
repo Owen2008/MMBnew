@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>moneyctrproduct</title>
+  <title>dicountproduct</title>
   <script src="./lib/flexible/flexible_css.js"></script>
   <script src="./lib/flexible/flexible.js"></script>
+ <!-- <link rel="stylesheet" href="./css/dicountproduct.css"> -->
  <link rel="stylesheet" href="./css/moneyctrproduct.css">
  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
   
@@ -41,67 +42,11 @@
       <div class="product">
         
         <!-- 挖个坑 -->
+        <div class="detial">
         
-            <!-- <h3>大标题</h3>
-            <p>  <span>来源 时间 小编</span> </p>
-               <div class="prodec">
-                  <img src="images/product.jpg" alt="" class="fr">
-                 
-                 <p class="">大段产品说明22222222222222222222
-                   wwwwwwwwwwwwwwwwwww
-                   哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇
-                   哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇
-                   哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇
-                   哇哇哇哇哇哇哇哇     哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇
-                   哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇
-                   哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇
-                   哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇
-                   哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇
-                   哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇
-                    哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇
-                    哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇</p>
-                    <p></p>
-                    
-                  <p class="">产品介个.推荐</p>
-                  <div class="bigimg">
-                    <img src="images/productctrl.jpg" alt="">
-                  </div>
-                  <ul>
-                    <li><span style="color:#000">北京</span> <span style="color:red">有货</span></li>
-                    <li>北京 有货</li>
-                    <li>北京 有货</li>
-                    <li>北京 有货</li>
-                    <li>北京 有货</li>
-                    <li>北京 有货</li>
-                  
-                  </ul>
         </div>
-      
-            <div class="wrapper">
-              <button >前往购买</button>
-            </div>
-            <div class="erm">
-              <img src="images/mmbweixin2.png" alt="">
-            </div>
-        
-         <div class="commont">
-            <div class="write">
-              <h3>发表评论</h3>
-              <div class="wrapper">
-                  <textarea name="" id="" ></textarea>
-                  <div class="bottom">
-                    <button class="fr">发表评价</button>
-                  </div>
-                 </div>
-            </div>
-      
-           <div class="show">
-             <h3>最新评论</h3>
-           <div class="newcommont">
-             aaaaaaaa
-           </div>
-           </div>
-            </div> -->
+
+
       </div>
       
   </div>
@@ -129,25 +74,25 @@
   <script src="./lib/artTemplate/template-web.js"></script>
   <script src="./lib/mui/js/mui.js"></script>
   <script src="./js/common.js"></script>
-  <script src="./js/moneyctrproduct.js"></script>
+  <script src="./js/dicountproduct.js"></script>
 
   <script type="text/html" id="product-tpl">
     {{ each result v i}}
     <h3>{{v.productName}}</h3>
     <p>  <span>{{v.productFrom}} {{v.productTime}} {{v.productTips}}</span> </p>
        <div class="prodec">
-         <div class="imgsm fr ">
+         <!-- <div class="imgsm fr ">
             {{@v.productImgSm}}
-         </div>
+         </div> -->
         
          
-         <p class="">{{v.productInfo2}}</p>
+         <p class="">{{v.productInfo}}</p>
            
             <p> </p>
             
           <p class="">{{v.productInfo1}}</p>
           <div class="bigimg">
-            {{@v.productImg2
+            {{@v.productImg
             }}
           </div>
          
