@@ -9,7 +9,8 @@ $(function(){
   })
   $(".product-yh").on("click","li",function(){
     var couponid=$(this).data("couponld");
-    // console.log(couponid,$(this).data())
-    location.href="couponproduct.html?couponid="+couponid+""
+    var title=$(this).data("title")
+    console.log(couponid,$(this).data())
+    location.href="couponproduct.html?couponid="+couponid+"&title="+title+""
   })
 })

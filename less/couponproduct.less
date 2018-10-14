@@ -1,0 +1,52 @@
+@import "base";
+@import "common";
+.mmb-container{
+  position: relative;
+}
+.mmb-main{
+  .tips{
+    text-align: center;
+  }
+  background-color: #fff;
+  .product{
+    .price{
+      font-weight: 700;
+      padding:20*@rem;
+      color:#000;
+    }
+    .time{
+      color:#EF7800;
+    }
+  }
+}
+.shade{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  .box{
+    position: fixed;
+    top:300*@rem;
+    transform: translateX(-50%);
+    left:50%;
+   
+    .arrow-l ,.arrow-r{
+      width: 30px;
+      height:38px;
+     
+      background-color: rgba(0,0,0,0.71);;
+      color: #eee;
+      font-size: .6rem;
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%); 
+    }
+    .arrow-l{
+       left:-30px;
+    }
+    .arrow-r{
+     right:-30px;
+    }
+  }
+}
