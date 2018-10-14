@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>productlist</title>
+  <title>moneycontrol</title>
   <script src="./lib/flexible/flexible_css.js"></script>
   <script src="./lib/flexible/flexible.js"></script>
- <link rel="stylesheet" href="./css/productlist.css">
+ <link rel="stylesheet" href="./css/moneycontrol.css">
  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
   
  <link rel="stylesheet" type="text/css" href="./fonts/iconfont.css">
@@ -16,30 +16,27 @@
 </head>
 <body>
   <div class="mmb-container">
-  <div class="mmb-header" id="toTop">
+  <div class="mmb-header"  id="toTop">
     <div class="logo ">
-      <a href="./index.html">
+      <i class="mui-icon mui-icon-arrowleft" style="color:#fff;font-size: 30px;"></i>
+       
+     </div>
+      <!-- <a href="./index.html">
         <img src="./images/header_logo.png" alt="">
-      </a>
-      
-    </div>
+      </a> -->
+      <h3 >省钱控-最新优惠</h3>
+   
+    
     <div class="download ">
       <a href="#">
         <img src="./images/header_app.png" alt="">
       </a>
     </div>
   </div>
-  <div class="mmb-search">
-     
-    <input type="text" name="key" class="search-input" placeholder="请输入你想比价的商品名">
-    <button class="search-btn">搜索</button>
-  </div>
+ 
   
   <div class="mmb-main">
-    <div class="category-nav">
-    
-      <button class="selector mui-btn">删选</button>
-    </div>
+   
       <div class="product">
         <!-- 挖个坑 -->
        
@@ -91,50 +88,39 @@
   <script src="./lib/artTemplate/template-web.js"></script>
   <script src="./lib/mui/js/mui.js"></script>
   <script src="./js/common.js"></script>
-  <script src="./js/productlist.js"></script>
+  <script src="./js/moneycontrol.js"></script>
 
-  <!-- 面包屑模板 -->
-  <script type="text/html" id="nav-tpl">
-    {{ each result v i}}
-    <ul>
-      
-        <li><a href="index.html"> 首页</a>  > </li>
-        <li><a href="category.html"> 全部分类</a> > </li>
-        <li class="cate-top">{{v.category}}</li>
-      </ul>
-      {{ /each}}
-  </script>
+  
   
 
 <!-- 产品模块渲染 -->
 
-  <script type="text/html" id="product-tpl">
-    <ul data-pagetotal="{{totalCount}}" data-pagesize="{{pagesize}}">
-      {{ each result v i }}
-     
-        <li data-productid="{{v.productId}}">
-            <p class="hide">{{v.productName}}</p>
-          <div class="pro-img">
-          {{@v.productImg}}
-          </div>
-          <div class="pro-dec">
-            <p class="text">
-               {{ v.productName}}
-            </p>
-            <p class="price"> {{v.productPrice}}</p>
-            <p class="origi"> 
-             <span>{{v.productQuote
-            }} </span>
-             <span> {{v.productCom
-            }}</span>
-  
-            </p>
-          </div>
-        </li>
-  {{ /each }}
-      </ul>
-  
-  </script>
+<script type="text/html" id="product-tpl">
+  <ul data-pagetotal="{{totalCount}}" data-pagesize="{{pagesize}}">
+    {{ each result v i }}
+      <li data-id="{{v.productId}}">
+        <div class="pro-img">
+         {{@v.productImgSm}}
+        </div>
+        <div class="pro-dec">
+          <p class="text">
+              {{v.productName}}
+              <span>{{v.productPinkage
+                }}</span>
+          </p>
+          <p class="origin"> 
+            <span>{{v.productFrom
+                }} | {{v.productTime}}</span>
+            <span>
+                <i class="iconfont icon-liuyan"></i>{{v.productComCount.match(/\d+/g)[0]}}
+              </span>
+          </p>
+        </div>
+      </li>
+{{ /each }}
+    </ul>
+
+</script>
 
 
 

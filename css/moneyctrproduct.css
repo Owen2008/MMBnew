@@ -370,87 +370,109 @@ textarea {
 .mmb-main {
   background-color: #fff;
 }
-.mmb-main .category-nav {
-  height: 0.93331rem;
-  line-height: 0.93331rem;
-  border-top: 1px solid #C9C9C9;
-  border-bottom: 1px solid #C9C9C9;
-  background-image: linear-gradient(to bottom, #ffffff, #eeeeee);
-  padding: 0 10px;
+.mmb-main .product {
+  padding: 0.39999rem 0.26666rem;
+}
+.mmb-main .product .imgsm img {
+  width: 100px;
+  height: 100px;
+}
+.mmb-main .product .bigimg {
+  margin: 0.53332rem 0;
+}
+.mmb-main .product .bigimg img {
+  display: block;
+  margin: 0 auto;
+}
+.mmb-main .product > ul {
+  width: 3.679908rem;
+  box-shadow: 2px 2px 2px #ccc;
+  margin: 0.53332rem auto;
+}
+.mmb-main .product > ul li {
+  padding: 0 0.26666rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  line-height: 0.613318rem;
+  height: 0.613318rem;
+  border-bottom: 1px dashed #ccc;
 }
-.mmb-main .category-nav ul li {
+.mmb-main .product .wrapper {
+  padding: 0 0.26666rem;
+  margin-bottom: 0.66665rem;
+}
+.mmb-main .product .wrapper button {
+  height: 0.79998rem;
+  background-color: #FF9000;
+  color: #fff;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+.mmb-main .product .erm {
+  text-align: center;
+}
+.mmb-main .product .erm img {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.mmb-main .product .commont .tit {
+  padding: 0.39999rem 0;
+}
+[data-dpr='1'] .mmb-main .product .commont .tit {
+  font-size: 20px;
+}
+[data-dpr='2'] .mmb-main .product .commont .tit {
+  font-size: 40px;
+}
+[data-dpr='3'] .mmb-main .product .commont .tit {
+  font-size: 60px;
+}
+.mmb-main .product .commont .reply {
+  padding: 0;
+  height: 2.999925rem;
+  border: 2px solid #ccc;
+  position: relative;
+}
+.mmb-main .product .commont .reply textarea {
+  height: 2.066615rem;
+}
+.mmb-main .product .commont .reply .ctrl {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0.93331rem;
+  background-color: #eee;
+  text-align: right;
+}
+.mmb-main .product .commont .reply .ctrl input {
+  height: 100%;
+  width: 2.6666rem;
+  background-color: #FF9000;
+  color: #fff;
+}
+.mmb-main .product .commont .list ul li {
+  padding: 0.39999rem;
+  width: 100%;
+  overflow: hidden;
+}
+.mmb-main .product .commont .list ul li .userimg {
+  margin-right: 0.39999rem;
   float: left;
 }
-.mmb-main .category-nav .selector {
-  background-image: linear-gradient(to bottom, #d5d5d5, #ffffff);
+.mmb-main .product .commont .list ul li .userimg img {
+  width: 1.06664rem;
+  height: 1.06664rem;
+  border-radius: 50%;
 }
-.mmb-main .product ul {
-  margin-bottom: 0;
+.mmb-main .product .commont .list ul li .con {
+  overflow: hidden;
 }
-.mmb-main .product .price {
-  font-size: .30rem;
-  color: red;
+.mmb-main .product .commont .list ul li .con .name .username {
+  float: left;
 }
-.pagination {
-  padding: 0.39999rem;
-  border-bottom: 1px solid #C9C9C9;
-  background: #fff;
-}
-.pagination .numberbox {
-  display: flex;
-  justify-content: space-around;
-}
-.pagination .numberbox button {
-  width: 2.159946rem;
-  height: 0.879978rem;
-  background-image: linear-gradient(to bottom, #d5d5d5, #ffffff);
-}
-.pagination .numberbox .warpper {
-  position: relative;
-  height: 0.879978rem;
-  width: 1.99995rem;
-  border: 1px solid #C9C9C9;
-  text-align: center;
-  line-height: 0.879978rem;
-}
-[data-dpr='1'] .pagination .numberbox .warpper {
-  font-size: 18px;
-}
-[data-dpr='2'] .pagination .numberbox .warpper {
-  font-size: 36px;
-}
-[data-dpr='3'] .pagination .numberbox .warpper {
-  font-size: 54px;
-}
-.pagination .numberbox .warpper i {
-  padding-top: 0.26666rem;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 0.426656rem;
-  height: 100%;
-  background-color: #E7E7E7;
-  font-size: .30rem;
-}
-.pagination .numberbox .warpper ul.hide {
-  display: none;
-}
-.pagination .numberbox .warpper ul {
-  width: 1.99995rem;
-  position: absolute;
-  top: 0.879978rem;
-  left: 0;
-}
-.pagination .numberbox .warpper ul li {
-  height: 0.879978rem;
-  width: 1.99995rem;
-  border: 1px solid #C9C9C9;
-  border-top: none;
-  background-color: #fff;
-}
-.pagination .numberbox .warpper ul li:hover {
-  background-color: skyblue;
+.mmb-main .product .commont .list ul li .con .name .time {
+  float: right;
 }

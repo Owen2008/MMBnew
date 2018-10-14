@@ -43,7 +43,7 @@ var page;
 
     //  分页下拉菜单
      page=Math.ceil(pagetotal/pagesize );
-  
+     $(".box").html("<span class='current'>"+currentPage+"</span> / <span class='total'>"+page+"</span>")
     var htmlStr="";
     for (var i=1;i<=page;i++){
      
@@ -78,6 +78,7 @@ var page;
     currentPage--;
     currentPage = currentPage<=1 ?  1 : currentPage;
     $(".pagination .box .current").text(currentPage);
+    $(".pagination .box .current").text(currentPage);
     render(currentPage);
   })
   $(".next").click(function(){
@@ -89,7 +90,9 @@ var page;
     currentPage = currentPage >= page ?  page : currentPage;
     
     $(".pagination .box .current").text(currentPage);
+    $(".pagination .box .current").text(currentPage);
     render(currentPage);
+
   })
 
 })

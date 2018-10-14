@@ -29,8 +29,15 @@
   height: 100 *@rem;;
   background-color: #FF841D;
   width: 100%;
-  padding: 10*@rem;
+  padding: 20*@rem 10*@rem;
   position: relative;
+  h3{
+    color: #fff;
+    font-size: .6rem;
+    font-weight: 700;
+   
+    text-align: center;
+  }
   .logo{
     position: absolute;
     top:50%;
@@ -168,4 +175,69 @@
     
     background-image: linear-gradient(to bottom, #D5D5D5, #fff);
   }
+}
+
+
+//分页
+.pagination{
+  padding:30*@rem;;
+
+ border-bottom: 1px solid #C9C9C9;
+  background: #fff;
+  .numberbox{
+    display: flex;
+    justify-content: space-around;
+    button{
+      width: 162*@rem;
+      height: 66*@rem;
+      background-image: linear-gradient(to bottom, #D5D5D5, #fff);
+
+    }
+    .warpper{
+     
+      position: relative;
+      height: 66*@rem;
+      width: 150*@rem;
+      border:1px solid #C9C9C9;
+      text-align: center;
+      line-height: 66*@rem; 
+      .font-size(18px);
+      // height: 66*@rem;
+    
+    i{
+      padding-top:20*@rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 32*@rem;
+      height: 100%;
+      background-color: #E7E7E7;
+      font-size: .30rem;
+    }
+    ul.hide{
+      display:none;
+    }
+    ul{
+      width: 150*@rem;
+      position: absolute;
+      top:66*@rem;
+      left:0;
+      height: 66*3*@rem;
+      overflow: auto;
+    li{
+      height: 66*@rem;
+      width: 150*@rem;
+      border:1px solid #C9C9C9;
+      border-top: none;
+      background-color: #fff;
+    }
+    li:hover{
+      background-color: skyblue;
+    }
+    }
+    }
+    
+  }
+ 
+
 }

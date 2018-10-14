@@ -1,0 +1,129 @@
+@import "base";
+@import "common";
+.mmb-main{
+  background-color: #fff;
+  .product{
+    padding:30*@rem 20*@rem;
+    .imgsm{
+     
+      img{
+        width: 100px;
+        height: 100px;
+        // display: block;
+        // width: 100%;
+        // height: 100%;
+      }
+    }
+    .bigimg{
+      // border-top:1px solid #666;
+      // text-align: center;
+      margin:40*@rem 0;
+      img{
+        display: block;
+        margin:0 auto;
+      }
+    }
+    >ul{
+      width: 276*@rem;
+      box-shadow: 2px 2px 2px #ccc;
+      margin:40*@rem auto;
+      li{
+        padding:0 20*@rem;
+        display: flex;
+        justify-content: space-between;
+        line-height:46*@rem; 
+   
+        height: 46*@rem;
+        border-bottom: 1px dashed #ccc;
+      }
+    }
+    .wrapper{
+      padding: 0 20*@rem;
+      margin-bottom: 50*@rem;
+      button{
+        height: 60*@rem;;
+        background-color: #FF9000;
+        color:#fff;
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+      }
+
+    }
+    .erm{
+      text-align: center;
+      img{
+        margin:0 auto;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .commont{
+  
+      .tit{
+        // height: 90*@rem;
+        padding: 30*@rem 0;
+        .font-size(20px);
+      
+      }
+      .reply{
+        // margin:10px;
+        padding:0;
+        height: 225*@rem;
+        border:2px solid #ccc;
+        position: relative;
+        textarea{
+          height:155*@rem ;
+        }
+        .ctrl{
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 70*@rem;
+          background-color: #eee;
+          text-align: right;
+          input{
+            height: 100%;
+            width: 200*@rem;
+            background-color: #FF9000;
+            color:#fff;
+          }
+        }
+        
+      }
+      .list{
+        ul{
+          li{
+            padding:30*@rem;
+            width: 100%;
+            // background-color: pink;
+            overflow: hidden;
+            .userimg{
+              margin-right: 30*@rem;
+              float: left;
+              img{
+                width: 80*@rem;
+                height: 80*@rem;
+                border-radius: 50%;
+              }
+             
+            }
+            .con{
+             overflow: hidden;
+              .name{
+                .username{
+                  float: left;
+                }
+                .time{
+                  float: right;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+ 
+}
