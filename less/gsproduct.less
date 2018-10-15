@@ -1,0 +1,136 @@
+@import "base";
+@import "common";
+.mmb-main{
+  // background-color: #fff;
+  .title{
+    position: relative;
+    // overflow: hidden;
+    padding-right:90*@rem;
+    height: 76*@rem;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+   #up{
+    
+    background-color: #fff;
+     overflow: hidden;
+     width: 100%;
+       >li{
+         padding:0 20*@rem;
+         height: 70*@rem;
+         line-height: 70*@rem;
+         position: relative;
+      span{
+        font-size: .30rem;
+        width: 80%;
+       
+      }
+     i{
+      font-size: .30rem;
+     
+      position: absolute;
+      right: 0;
+      top:30%;
+     }
+        float: left;
+        width: 33%;
+        text-align: center;
+      }
+    }
+    #down{
+      // z-index: 100;
+      display: none;
+      font-size: .30rem;
+      position: absolute;
+      top:100%;
+      left:0;
+      width: 100%;
+      background-color: #fff;
+      >li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5*@rem 30*@rem;
+     border-top: 1px solid #ccc;
+     >i{
+      color:#fff;
+      padding:0;
+      font-size: .60rem;
+  
+     }
+     
+      }
+    }
+    .icon-l{
+      position: absolute;
+      top:0;
+      right: 0;
+      width: 90*@rem;
+      line-height: 90*@rem;
+      border-left: 1px solid #ccc;
+      height: 100%;
+      text-align: center;
+      
+      i{
+        
+        font-size: .60rem;
+      }
+      
+    }
+   
+  }
+  .product-gs{
+    ul{
+     padding:20*@rem 40*@rem ;
+      overflow: hidden;
+      li{
+        background-color: #fff;
+        float: left;
+        width: 49%;
+        padding: 20*@rem;
+        margin-bottom: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .imgbox{
+          height: 300*@rem;;
+          text-align: center;
+          img{
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .dec{
+          color:#000;
+          .font-size(14px);
+          height: 50*@rem;
+        }
+        .price{
+          
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          p{
+            color:#F62F00;
+            .font-size(18px);
+          }
+          .btn{
+            background-color: #FF9501;
+            color:#fff;
+            width: 126*@rem;
+            height: 56*@rem;
+            font-size:.2rem;
+            padding:5*@rem 10*@rem;
+            text-align: center;
+            border-radius: 5px;
+            line-height: 56*@rem;;
+          }
+        }
+      }
+      li:nth-child(odd){
+        margin-right: 2%; 
+        
+      }
+    }
+  }
+}

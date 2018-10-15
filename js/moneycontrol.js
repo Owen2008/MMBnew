@@ -32,21 +32,7 @@ var page;
   })
  }
 
- $(".pagination .warpper").on("click", "i",(function(e){
-   
-  var $ul= $(this).prevAll("ul")
- 
- $ul.hasClass("hide")? $ul.removeClass("hide") : $ul.addClass("hide");
 
-  $("#down").on("click","li", function(){
-    $(this).parent().addClass("hide");     
-   $(".pagination .box").html($(this).html());
-    var index=$(this).data("index");
-    currentPage=index;
-    render(currentPage);
-  }) //li的点击事件
-
-})) 
 //上页
 console.log(1,page)
 $(".prev").click(function(){

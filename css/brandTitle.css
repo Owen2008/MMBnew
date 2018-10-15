@@ -1,0 +1,419 @@
+/* 你好呵呵呵 */
+/*------------- S reset css  重置默认的一些样式  浏览器子自带的  目的是保持各种终端显示一致 -----------------*/
+html {
+  background: #fff;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html * {
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  /*设置所有的盒子的宽度以边框开始计算*/
+  -webkit-box-sizing: border-box;
+  /*要兼容 webkit 浏览器内核厂商 这种情况一般是老的移动端浏览器*/
+  box-sizing: border-box;
+}
+html,
+body {
+  background: #f7f7f7;
+  color: #e0e0e0;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  /*在移动端特殊的设置*/
+}
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+del {
+  text-decoration: line-through;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+  font-style: normal;
+  font-weight: 500;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 500;
+}
+ins,
+a {
+  text-decoration: none;
+  color: #e0e0e0;
+}
+a:hover {
+  color: #e0e0e0;
+}
+input,
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  /*特殊的属性定义  清除浏览器给input自带的样式*/
+  -webkit-appearance: none;
+  /*组件默认的样式空*/
+}
+/*------------- E  reset css  重置默认的一些样式  浏览器子自带的  目的是保持各种终端显示一致 -----------------*/
+/*------------- S common css  也就是我们公用的css -------------*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::after,
+.clearfix::before {
+  content: ".";
+  line-height: 0;
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.w33 {
+  width: 33.3333%;
+}
+.w50 {
+  width: 50%;
+}
+/*------------- E common css  也就是我们公用的css -------------*/
+.hide {
+  display: none;
+}
+.mmb-container {
+  min-width: 320px;
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #eee;
+}
+.mmb-header {
+  height: 1.3333rem;
+  background-color: #FF841D;
+  width: 100%;
+  padding: 0.26666rem 0.13333rem;
+  position: relative;
+}
+.mmb-header h3 {
+  color: #fff;
+  font-size: .6rem;
+  font-weight: 700;
+  text-align: center;
+}
+.mmb-header .logo {
+  position: absolute;
+  top: 50%;
+  left: 0.199995rem;
+  transform: translateY(-50%);
+}
+.mmb-header .logo img {
+  width: 4.946543rem;
+  height: 0.66665rem;
+}
+.mmb-header .download {
+  position: absolute;
+  top: 50%;
+  right: 0.13333rem;
+  transform: translateY(-50%);
+}
+.mmb-header .download img {
+  width: 0.906644rem;
+  height: 0.906644rem;
+}
+.mmb-search {
+  padding: 0.333325rem 0.26666rem;
+  display: flex;
+  background-color: #fff;
+  height: 1.3333rem;
+}
+.mmb-search .search-btn {
+  border-radius: 100px;
+  padding: 0 0.53332rem;
+  height: 0.66665rem;
+  background-color: #FF841D;
+  color: #fff;
+}
+.mmb-search .search-input {
+  border-radius: 100px;
+  margin: 0;
+  margin-right: 0.39999rem;
+  height: 0.66665rem;
+  background-color: #eee;
+}
+.mmb-footer {
+  margin-top: 0.66665rem;
+  width: 100%;
+  text-align: center;
+}
+.mmb-footer .nav {
+  margin-bottom: 0.453322rem;
+  border-top: 1px solid #C8C8C8;
+  border-bottom: 1px solid #C8C8C8;
+  height: 0.853312rem;
+  line-height: 0.853312rem;
+  width: 100%;
+  display: flex;
+}
+.mmb-footer .nav a {
+  flex: 1;
+  color: #000;
+}
+.mmb-footer .nav a:nth-child(2n) {
+  border-left: 1px solid #C8C8C8;
+  border-right: 1px solid #C8C8C8;
+}
+.product > ul {
+  margin-bottom: 0.26666rem;
+}
+.product > ul li {
+  height: 3.46658rem;
+  display: flex;
+  border-bottom: 1px solid #E6E6E6;
+}
+.product > ul li .pro-img {
+  width: 3.06659rem;
+  padding: 0.26666rem 0.39999rem;
+  display: flex;
+  align-items: center;
+}
+.product > ul li .pro-img img {
+  width: 100px;
+  height: 100px;
+}
+.product > ul li .pro-dec {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.39999rem 0.39999rem 0.79998rem;
+}
+.product > ul li .pro-dec .text {
+  color: #000;
+}
+[data-dpr='1'] .product > ul li .pro-dec .text {
+  font-size: 20px;
+}
+[data-dpr='2'] .product > ul li .pro-dec .text {
+  font-size: 40px;
+}
+[data-dpr='3'] .product > ul li .pro-dec .text {
+  font-size: 60px;
+}
+.product > ul li .pro-dec .text span {
+  color: #FF5C02;
+}
+.product > ul li .pro-dec .origin {
+  display: flex;
+  justify-content: space-between;
+}
+.product .wrapper {
+  padding: 0.26666rem;
+  width: 100%;
+}
+.product .wrapper .more-sale {
+  display: block;
+  height: 0.79998rem;
+  width: 100%;
+  font-size: .16rem;
+}
+.category-nav {
+  height: 0.93331rem;
+  line-height: 0.93331rem;
+  border-top: 1px solid #C9C9C9;
+  border-bottom: 1px solid #C9C9C9;
+  background-image: linear-gradient(to bottom, #ffffff, #eeeeee);
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.category-nav ul li {
+  float: left;
+}
+.category-nav .selector {
+  background-image: linear-gradient(to bottom, #d5d5d5, #ffffff);
+}
+.pagination {
+  padding: 0.39999rem;
+  border-bottom: 1px solid #C9C9C9;
+  background: #fff;
+}
+.pagination .numberbox {
+  display: flex;
+  justify-content: space-around;
+}
+.pagination .numberbox button {
+  width: 2.159946rem;
+  height: 0.879978rem;
+  background-image: linear-gradient(to bottom, #d5d5d5, #ffffff);
+}
+.pagination .numberbox .warpper {
+  position: relative;
+  height: 0.879978rem;
+  width: 1.99995rem;
+  border: 1px solid #C9C9C9;
+  text-align: center;
+  line-height: 0.879978rem;
+}
+[data-dpr='1'] .pagination .numberbox .warpper {
+  font-size: 18px;
+}
+[data-dpr='2'] .pagination .numberbox .warpper {
+  font-size: 36px;
+}
+[data-dpr='3'] .pagination .numberbox .warpper {
+  font-size: 54px;
+}
+.pagination .numberbox .warpper i {
+  padding-top: 0.26666rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.426656rem;
+  height: 100%;
+  background-color: #E7E7E7;
+  font-size: .30rem;
+}
+.pagination .numberbox .warpper ul.hide {
+  display: none;
+}
+.pagination .numberbox .warpper ul {
+  width: 1.99995rem;
+  position: absolute;
+  top: 0.879978rem;
+  left: 0;
+  height: 2.639934rem;
+  overflow: auto;
+}
+.pagination .numberbox .warpper ul li {
+  height: 0.879978rem;
+  width: 1.99995rem;
+  border: 1px solid #C9C9C9;
+  border-top: none;
+  background-color: #fff;
+}
+.pagination .numberbox .warpper ul li:hover {
+  background-color: skyblue;
+}
+.mmb-main {
+  background-color: #fff;
+}
+.mmb-main .brand-nav ul {
+  overflow: hidden;
+  padding: 0.26666rem;
+  background-image: linear-gradient(180deg, #ffffff, #eeeeee);
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.mmb-main .brand-nav ul li {
+  float: left;
+}
+.mmb-main .brand-nav ul li a {
+  color: #666666;
+}
+.mmb-main .product-b h3 {
+  margin: 5px 10px ;
+  padding: 10px 30px;
+  background-color: #E5E7E7;
+  border: 1px solid #ccc;
+}
+.mmb-main .product-b ul {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.mmb-main .product-b ul li {
+  height: 1.013308rem;
+  line-height: 1.013308rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 0.26666rem;
+  background-color: #EDEDED;
+  border-bottom: 1px solid #ccc;
+}
+[data-dpr='1'] .mmb-main .product-b ul li span {
+  font-size: 20px;
+}
+[data-dpr='2'] .mmb-main .product-b ul li span {
+  font-size: 40px;
+}
+[data-dpr='3'] .mmb-main .product-b ul li span {
+  font-size: 60px;
+}
+.mmb-main .product-b ul li i {
+  display: inline-block;
+}
