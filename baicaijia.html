@@ -41,12 +41,17 @@
   
   <div class="mmb-main">
      
-     
+<!--      
       <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
           <div class="mui-scroll" id="nav">
-        <!-- 坑  -->
+       
         </div>
-    </div>
+    </div> --> 
+    <div class="title">
+        <div class="" id="nav">
+      <!-- 坑  -->
+      </div>
+  </div>
       <div class="product">
         <!-- 挖个坑 -->
         <!-- <ul >
@@ -125,7 +130,7 @@
   <!-- 导航渲染 -->
   <script type="text/html" id="nav-tpl">
     
-    <ul class="clearfix">
+    <ul class="clearfix nav-ul">
         {{ each result v i}}
         <li data-titleid="{{v.titleId}}" class="mui-control-item"><a href="#">{{ v.title}}</a></li>
         {{ /each}}

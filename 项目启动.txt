@@ -1,0 +1,4 @@
+芒果数据库
+1--d盘\电商全端\快乐的10.1\mongou\.bat  ---数据库
+2--monguo api\src \start  ---  服务端
+3 --可以直接打开index页面

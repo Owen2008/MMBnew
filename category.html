@@ -39,36 +39,13 @@
   
   <div class="mmb-main">
     
-      <ul class="mui-table-view"> 
+      <!-- <ul class="mui-table-view"> 
           <li class="cate-top mui-table-view-cell mui-collapse">
-              <a class="mui-navigate-right " href="#">大家电</a>
-              <div class="mui-collapse-content cate-second" >
-                  <ul class="clearfix">
-                    <li>
-                      <a href="#">电视</a>
-                    </li>
-                    <li>
-                        <a href="#">空调</a>
-                    </li>
-                  <li>
-                          <a href="#">冰箱</a>
-                    </li>
-                    <li>
-                        <a href="#">电视</a>
-                      </li>
-                      <li>
-                          <a href="#">空调</a>
-                      </li>
-                    <li>
-                            <a href="#">冰箱</a>
-                      </li> 
-                      <li>
-                            <a href="#">冰箱</a>
-                      </li>   
-                  </ul>
-              </div>
-          </li>
-      </ul>
+              <a class="mui-navigate-right " href="#">大家电</a>  
+              <!-- 一级分类 -->
+            
+          <!-- </li>
+      </ul> --> -->
   </div>
   <div style="height:30px;background-color: #fff;"></div>
   <div class="mmb-footer">
@@ -96,14 +73,18 @@
 
 <!-- 一级分类 -->
   <script type="text/html" id="cate-top">
-    {{each result v i }}
+   
     <ul class="mui-table-view" > 
+        {{each result v i }}
         <li class="cate-top mui-table-view-cell mui-collapse" data-titleId="{{ v.titleId }}">
             <a class="mui-navigate-right " href="#">{{ v.title }}</a>
-         
+            <div class="mui-collapse-content cate-second" >
+                <!-- 二级分类的坑 -->
+                  </div>
         </li>
+        {{ /each}}
     </ul>
-    {{ /each}}
+  
 </div>
 </script>
 
@@ -111,7 +92,7 @@
   
 <script type="text/html" id="cate-second">
  
-<div class="mui-collapse-content cate-second" >
+
     <ul class="clearfix">
         {{each result v i }}
       <li data-categoryid="{{ v.categoryId }}" data- class="category-tips">
@@ -119,7 +100,7 @@
       </li>
       {{ /each}}
     </ul>
-</div>
+
 
 </script>
  

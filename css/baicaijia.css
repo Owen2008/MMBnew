@@ -371,37 +371,38 @@ textarea {
 .mmb-main {
   position: relative;
 }
-.mmb-main .mui-segmented-control.mui-segmented-control-inverted {
+.mmb-main .title {
   height: 1.19997rem;
 }
-.mmb-main .mui-segmented-control.mui-segmented-control-inverted #nav {
-  height: 100%;
+.mmb-main .title #nav {
+  width: 100%;
+  overflow: hidden;
   position: absolute;
 }
-.mmb-main .mui-segmented-control.mui-segmented-control-inverted #nav ul {
-  width: 1000px;
+.mmb-main .title #nav ul {
+  height: 1.19997rem;
   padding: 0.066665rem 0.26666rem;
   background-color: #fff;
 }
-.mmb-main .mui-segmented-control.mui-segmented-control-inverted #nav ul li {
+.mmb-main .title #nav ul li {
   float: left;
   font-size: 0.39999rem;
 }
-.mmb-main .mui-segmented-control.mui-segmented-control-inverted #nav ul li a {
+.mmb-main .title #nav ul li a {
   display: block;
   padding: 0.26666rem;
   color: #000;
 }
-[data-dpr='1'] .mmb-main .mui-segmented-control.mui-segmented-control-inverted #nav ul li a {
+[data-dpr='1'] .mmb-main .title #nav ul li a {
   font-size: 20px;
 }
-[data-dpr='2'] .mmb-main .mui-segmented-control.mui-segmented-control-inverted #nav ul li a {
+[data-dpr='2'] .mmb-main .title #nav ul li a {
   font-size: 40px;
 }
-[data-dpr='3'] .mmb-main .mui-segmented-control.mui-segmented-control-inverted #nav ul li a {
+[data-dpr='3'] .mmb-main .title #nav ul li a {
   font-size: 60px;
 }
-.mmb-main .mui-segmented-control.mui-segmented-control-inverted #nav ul li.mui-active {
+.mmb-main .title #nav ul li.current {
   color: #F4483E;
   border-bottom: 2px solid #F4483E;
 }

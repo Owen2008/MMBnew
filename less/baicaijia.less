@@ -4,14 +4,16 @@
   position: relative;
  
 
-.mui-segmented-control.mui-segmented-control-inverted{
+.title{
     height: 90*@rem;
-   
+    
     #nav{
-      height: 100%;
+      width:100%;
+      overflow: hidden;
       position: absolute;
       ul{
-      width: 1000px;
+      //  transform: translateX(-100px);
+        height: 90*@rem;
         // position: absolute;
         padding: 5*@rem 20*@rem;
         background-color: #fff;
@@ -29,7 +31,7 @@
           }
          
         }
-       li.mui-active{
+       li.current{
          color:#F4483E;
          border-bottom:2px solid #F4483E;
         }
